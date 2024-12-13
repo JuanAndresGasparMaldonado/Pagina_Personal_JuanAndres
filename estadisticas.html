@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Especifica el tipo de documento y el idioma para accesibilidad y SEO -->
+    <meta charset="UTF-8">
+    <!-- Asegura que la página sea responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas - Mundo Tenístico</title>
+    <!-- Enlace a hoja de estilos externa -->
+    <link rel="stylesheet" href="./styles/styles_estadisticas.css">
+    <!-- Integración de fuentes personalizadas de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <script>
+        // Agrega funcionalidad para el menú hamburguesa
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navbar = document.querySelector(".navbar");
+    
+            // Alterna la clase 'active' para mostrar u ocultar el menú
+            hamburger.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Logotipo del sitio -->
+            <div class="logo">Mundo Tenístico</div>
+            <!-- Icono de menú para dispositivos móviles -->
+            <div class="hamburger">
+                <!-- Líneas representando el icono de hamburguesa -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <!-- Enlaces de navegación -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Estadísticas de Jugadores</h1>
+        <section class="estadisticas">
+            <!-- Cada div representa una categoría estadística -->
+            <div class="stat">
+                <h2>Líderes al Saque</h2>
+                <!-- El encabezado principal debe destacar al mejor jugador -->
+                <h3>A. Zverev: 300.3</h3>
+                <p>G. Mpetshi Perricard: 299.5</p>
+                <p>M.Berritini: 296.2</p>
+                <p>H.Hurkacz: 295.8</p>
+                <p>J. Sinner: 295.6</p>
+            </div>
+            <!-- Siguientes secciones siguen el mismo formato -->
+            <div class="stat">
+                <h2>Líderes al Resto</h2>
+                <h3>A. de Miñaur: 165.6</h3>
+                <p>C. Alcaraz: 162.2</p>
+                <p>J. Sinner: 158.4</p>
+                <p>N. Djokovic: 157.7</p>
+                <p>T. Paul: 157.2</p>
+            </div>
+            <div class="stat">
+                <h2>Líderes en Aces</h2>
+                <h3>J. Isner: 1,150</h3>
+                <p>M. Raonic: 1,110</p>
+                <p>A. Zverev: 1,050</p>
+                <p>H. Hurkacz: 1,020</p>
+                <p>M. Berritini: 1,000</p>
+            </div>
+            <div class="stat">
+                <h2>Líderes en Dobles Faltas</h2>
+                <h3>B. Coric: 180</h3>
+                <p>S. Tsitsipas: 170</p>
+                <p>K. Khachanov: 165</p>
+                <p>D. Shapovalov: 160</p>
+                <p>F. Auger-Aliassime: 155</p>
+            </div>
+            <div class="stat">
+                <h2>Líderes en Porcentaje de Primer Servicio</h2>
+                <h3>N. Djokovic: 78.5%</h3>
+                <p>D. Medvedev: 77.8%</p>
+                <p>A. de Miñaur: 77.2%</p>
+                <p>J. Sinner: 76.9%</p>
+                <p>C. Alcaraz: 76.5%</p>
+            </div>
+            <div class="stat">
+                <h2>Líderes en Velocidad de Saque</h2>
+                <h3>N. Kyrgios: 231.0 km/h</h3>
+                <p>M. Berritini: 229.5 km/h</p>
+                <p>A. Zverev: 228.0 km/h</p>
+                <p>H. Hurkacz: 227.5 km/h</p>
+                <p>J. Isner: 226.8 km/h</p>
+            </div>
+            <div class="stat">
+                <h2>Líderes en Juegos Ganados</h2>
+                <h3>N. Djokovic: 1,200</h3>
+                <p>R. Nadal: 1,150</p>
+                <p>R. Federer: 1,100</p>
+                <p>A. Zverev: 1,050</p>
+                <p>C. Alcaraz: 1,000</p>
+            </div>
+            <div class="stat">
+                <h2>Líderes en Tiebreaks Ganados</h2>
+                <h3>M. Cilic: 90</h3>
+                <p>J. Isner: 85</p>
+                <p>R. Federer: 80</p>
+                <p>N. Djokovic: 78</p>
+                <p>A. Zverev: 75</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Información de copyright -->
+        <p>&copy; 2024 Mundo Tenístico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
